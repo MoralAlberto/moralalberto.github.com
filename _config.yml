@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            ALberto Moral
+title:            Alberto Moral
 locale:           en_US
 url:
 
@@ -28,7 +28,7 @@ kramdown:
 owner:
   name: Alberto Moral
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Mobile Developer"
   email: alberto.moral.g@gmail.com
   disqus-shortname:
   twitter: AlbertMoral
