@@ -26,13 +26,13 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Alberto Moral
   avatar: bio-photo.jpg
   bio: "Describe your self."
-  email:
+  email:"alberto.moral.g@gmail.com"
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: AlbertMoral
+  facebook: alberto.moral.gomez
   google:
     plus: #username
     analytics:
@@ -40,11 +40,11 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  github: MoralAlberto
+  stackoverflow: 4409134/moral
+  linkedin: albertomoral
   xing: #username
-  instagram: #username
+  instagram: albertmoral
   lastfm: #username
   tumblr: #username
   pinterest: #username
