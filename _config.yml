@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            ALberto Moral
 locale:           en_US
 url:
 
@@ -34,7 +34,7 @@ owner:
   twitter: AlbertMoral
   facebook: alberto.moral.gomez
   google:
-    plus: #username
+    plus: AlbertoMoralGomez
     analytics:
     verify:
     ad-client:
