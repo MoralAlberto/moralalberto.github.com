@@ -4,7 +4,7 @@ title: "Trying to be a better iOS developer"
 excerpt: "Day after day I try to be a better iOS developer. There isn't an easy way to achieve it, but during my last year I learned..."
 tags: [Learn by doing, iOS, Work, iOS Communities, Articles]
 image:
-  feature: desk-2.jpg
+  feature: desk-2.png
 ---
 
 > **Abstract**: Code, Learn by doing, iOS, Work, iOS Communities, Articles
@@ -27,7 +27,7 @@ There are seasons in the year that I'm too busy; workdays are hard. When I arriv
 Other key learnings I've learned during this last year are, **try to learn as much as you can from your coworkers, BE HUMBLE**. Trust me; By being humble, you'll be more open-minded and, thus, freer. You'll learn much more things you expected to do. Even if your coworkers are juniors, there might be things that you learn about them: tips, new resources, etc.
 
 <br/>
-I recommend you to be an active user at github, or StackOverflow. **Use github in order to create open source projects and cooperate with other awesome developers** (ask if you don't know how to use a repository). **StackOverflow is a great source to search code questions or to answer them**.
+I recommend you to be an active user at Github, or StackOverflow. **Use Github in order to create open source projects and cooperate with other awesome developers** (ask if you don't know how to use a repository). **StackOverflow is a great source to search code questions or to answer them**.
 
 <br/>
 As you can see, I just created a new blog, **I will write entirely in English to improve my skills** and to spread my knowledge over the iOS Community.
