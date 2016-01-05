@@ -4,7 +4,7 @@ title: "Trying to be a better iOS developer"
 excerpt: "Day after day I try to be a better iOS developer. There isn't an easy way to achieve it, but during my last year I learned..."
 tags: [Learn by doing, iOS, Work, iOS Communities, Articles]
 image:
-  feature: desk-2.png
+  feature: desk-2.jpg
 ---
 
 > **Abstract**: Code, Learn by doing, iOS, Work, iOS Communities, Articles
