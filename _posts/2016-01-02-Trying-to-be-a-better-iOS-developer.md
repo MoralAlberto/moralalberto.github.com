@@ -40,3 +40,6 @@ As you can see, I just created a new blog, **I will write entirely in English to
 - **Read a lot (iOS communities and advanced books)**.
 - **Put in practice what you have learned. (Learning by doing method)**.
 - **Share your knowledge**.
+
+<br/>
+<br/>
