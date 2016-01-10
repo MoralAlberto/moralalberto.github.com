@@ -8,9 +8,9 @@ image:
 ---
 > **Abstract**: Architectural Pattern, MVC, Test, Decoupled, Controller, View, Model
 
-The MVC (Model-View-Controller) design pattern **is a common way to organize code**, so all the **entities are decoupled** and ready to reuse, **BUT** Apple uses a [variation of MVC](https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html#//apple_ref/doc/uid/TP40010810-CH14-SW14). Using this pattern, only creates a terrible mess in our code, because the **View is totally tied with the Controller**.
+The MVC (Model-View-Controller) design pattern **is a common way to organize code**, so all the **entities are decoupled** and ready to reuse, **BUT** Apple uses a [variation of MVC](https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html#//apple_ref/doc/uid/TP40010810-CH14-SW14). Using this pattern, only creates a _mess_ in our code, because the **View is totally tied with the Controller**.
 <br/><br/>
-The **View** and the **Controller** are in the same file. The **UIViewController** is composed from the **View** and the **Controller** 😁, all the view's life cycle is there: viewDidLoad, viewWillAppear... and all the business logic., so, we finish creating a **Massive View Controllers**, with a lot of responsibilities. Responsible of the datasource, delegates, interacting with our repositories like: API REST, Core Data, Socket etc.
+The **View** and the **Controller** are in the same file. The **UIViewController** is composed from the **View** and the **Controller** 😁, all the view's life cycle is there: viewDidLoad, viewWillAppear... and all the business logic. So, we finish creating a **Massive View Controllers**, with a lot of responsibilities. Responsible of the datasource, delegates, interacting with our repositories like: API REST, Core Data, Socket etc.
 
 <br/>
 I quit using the basic architectural pattern that apple uses in their guidelines, don't give me wrong I used it until I see better pattern designs, I'll gonna explain it during the next weeks. **This post only covers the MVC that apple uses in their guidelines**.
@@ -53,11 +53,11 @@ In fact who many of you used this code before?
 {% gist MoralAlberto/2941884da168524023ef %}
 
 <br/>
-**The View knows about the Model, so the MVC's rules explained before are totally broken**. The View and the Model must be decoupled, the controller must be the mediator, but apple use the View and the Controller in the same place, so, all this logic are smashed.
-**The controller is the one that only knows about the View and the Model, so It must configure the Publication Cell and not our View. This increases more code in our ViewController, tending to have a massive view controller.**
+**The View knows about the Model, so the MVC's rules explained before are totally broken**. The View and the Model must be decoupled, the controller must be the mediator, but apple uses the View and the Controller in the same place, so, all this logic are smashed.
+The Controller is the one that only have to know about the View and the Model, so **the Controller must configure the Publication Cell and not our View**. This increases more code in our ViewController, tending to have a massive view controller.
 
 <br/>
-With this bad distribution, create test for that massive class will be tedious and also creating mocks for the view.
+With this bad distribution, creating test for that massive class will be tedious, and also creating mocks for the view. I'll explain MVVM and how easy it is test in that kind of architecture pattern (with [Nimble](https://github.com/Quick/Nimble) and [Quick](https://github.com/Quick/Quick)).
 
 <br/>
 <h2>Summary</h2>
