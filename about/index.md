@@ -75,10 +75,12 @@ Technical **OAuth 2.0 and Banc Sabadell API Rest** knowledge acquired to proceed
 
 # Applications released
 
-### PebbleVideo
-Up to now people has created more than **60.000 videos** through this app.
-It can be defined as an iOS Application that allows users to generate videos by controlling its creation a smartwatch pebble remotely.  There are buttons with a wide range of different functionality that includes stop, pause, continue or save the video.
+### [PebbleVideo](https://itunes.apple.com/us/app/pebblevideo/id811991561)
+Up to now people has created more than **80.000 videos** through this app.
+It can be defined as an iOS Application that allows users to generate videos by controlling its creation a smartwatch [pebble](Pebble Store Link https://apps.getpebble.com/applications/52da94f4c3e836fbd5000170) remotely. There are buttons with a wide range of different functionality that includes stop, pause, continue or save the video.
+
+
 
 ### LinkedMesh
-LinkedMesh ables you to increase your networking circle by detecting the professionals you have around and you are interested to contact with by adding them to the app and to your LinkedIn profile simultaneously without the need of having internet.
+[Removed from app store] LinkedMesh ables you to increase your networking circle by detecting the professionals you have around and you are interested to contact with by adding them to the app and to your LinkedIn profile simultaneously without the need of having internet.
 Forget about all those professional cards your don’t remember where you left and recognize clearly the people you have contacted with.
