@@ -8,9 +8,9 @@ image:
 ---
 > **Abstract**: Architectural Pattern, MVC, Test, Decoupled, Controller, View, Model
 
-The traditional MVC design pattern **is a common way to organize your code*. There're three main  oles: model, view and controller. So, all the **entities are decoupled** with their role, and they have a way to communicate with each other. **However**, Apple uses a [variation of MVC](https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html#//apple_ref/doc/uid/TP40010810-CH14-SW14). By using the Apple's MVC pattern, you only create a **Massive View Controller**, because the **View is totally tied with the Controller**.
+The traditional MVC design pattern **is a common way to organize your code. There're three main roles: Model, View and Controller. So, all the entities are decoupled** with their role, and they have a way to communicate with each other. **However**, Apple uses a [variation of MVC](https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html#//apple_ref/doc/uid/TP40010810-CH14-SW14). By using the Apple's MVC pattern, you only create a **Massive View Controller** because the **View is totally tied with the Controller**.
 <br/><br/>
-The **View** and the **Controller** are in the same file. The **UIViewController** is composed from the **View** and the **Controller** 😁, all the view's life cycle is there: viewDidLoad, viewWillAppear... and all the business logic. So, we end up creating a **Massive View Controllers** with many responsibilities: Responsibility for the data source, delegates, interaction with our API REST, Core Data, Socket or any other repository.
+The **View** and the **Controller** are in the same file. The **UIViewController** is composed from the **View** and the **Controller** 😁, and all the view's life cycle is there: viewDidLoad, viewWillAppear... and all the business logic. So, we end up creating a **Massive View Controllers** with many responsibilities: Responsibility for the data source, delegates, interaction with our API REST, Core Data, Socket or any other repository.
 
 <br/>
 That's why I stopped using the basic architectural pattern that Apple uses in their guidelines. I used to using it, until I saw better pattern designs. I'm gonna talk about them during the next weeks. **This post only covers the MVC that Apple manages in their guidelines**.
@@ -25,13 +25,13 @@ With the Apple's MVC it's hard to see the [Single Responsible Principle](https:/
 </figure>
 
 <br/>
-- The view sends interactions to the controller.<br/>
-- The controller is the class, in which the **business logic** takes place and have the possibility of updating the model or not (or it can also send an API Request to see the result in the View)<br/>
-- The controller is the **mediator** between the view and the model.<br/>
-- The model notifies the controller the new changes, and these changes are updated in the View.<br/>
+- The View sends interactions to the Controller.<br/>
+- The Controller is the class, in which the **business logic** takes place and have the possibility of updating the Model or not (i.e it can send an API Request to see the result in the View)<br/>
+- The Controller is the **mediator** between the View and the Model.<br/>
+- The Model notifies the Controller the new changes, and these changes are updated in the View.<br/>
 
 <br/>
-**The controller is the least reusable code**, because it provides code to interact with both the view and model. The view and the model are decoupled. They don't know about each other, only about the controller.
+**The Controller is the least reusable code**, because it provides code to interact with both the View and Model. The View and the Model are decoupled. They don't know about each other, only about the Controller.
 
 <br/>
 **But this is only in theory. In practice**, the next figure shows the **MVC** variation that Apple uses in their guidelines.
@@ -45,7 +45,7 @@ With the Apple's MVC it's hard to see the [Single Responsible Principle](https:/
 The picture illustrates that the View and the Controller are the same, are tightly coupled (as I mentioned before)
 
 <br/>
-In fact who many of you have used this code before?
+In fact, who many of you have used this code before?
 
 
 {% gist MoralAlberto/2941884da168524023ef %}
