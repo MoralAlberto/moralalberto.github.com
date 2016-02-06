@@ -10,7 +10,12 @@ image:
 
 The traditional MVC design pattern **is a common way to organize your code. There're three main roles: Model, View and Controller. So, all the entities are decoupled** with their role, and they have a way to communicate with each other. **However**, Apple uses a [variation of MVC](https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html#//apple_ref/doc/uid/TP40010810-CH14-SW14). By using the Apple's MVC pattern, you only create a **Massive View Controller** because the **View is totally tied with the Controller**.
 <br/><br/>
-The **View** and the **Controller** are in the same file. The **UIViewController** is composed from the **View** and the **Controller** 😁, and all the view's life cycle is there: viewDidLoad, viewWillAppear... and all the business logic. So, we end up creating a **Massive View Controllers** with many responsibilities: Responsibility for the data source, delegates, interaction with our API REST, Core Data, Socket or any other repository.
+The **View** and the **Controller** are in the same file. The **UIViewController** is composed from the **View** and the **Controller** 😁, and all the view's life cycle is there: viewDidLoad, viewWillAppear... and all the business/presentation logic. So, we end up creating a **Massive View Controllers** with many responsibilities: responsibility for the data source, delegates, interaction with our API REST, Core Data, Socket or any other repository.
+
+Where do I put network code?
+Where do I put datasource code?
+Where do I put business logic?
+Where do I put presentation logic?  
 
 <br/>
 That's why I stopped using the basic architectural pattern that Apple uses in their guidelines. I used to using it, until I saw better pattern designs. I'm gonna talk about them during the next weeks. **This post only covers the MVC that Apple manages in their guidelines**.
@@ -55,7 +60,7 @@ The last snippet shows the knowledge from View towards the Model, **so the MVC's
 The Controller is the only one that knows about the View and the Model, so **the Controller must configure the Publication Cell and not the View**. This increases our code within the ViewController, tending to have a Massive View Controller.
 
 <br/>
-With this bad distribution, creating tests for that massive class and mocks for the view will be tedious. In further blog posts,  I'll explain more about MVVM and how easy it is testing in that kind of architecture pattern. (with [Nimble](https://github.com/Quick/Nimble) and [Quick](https://github.com/Quick/Quick)).
+With this bad distribution, creating tests for that massive class and mocks for the view will be tedious. In further blog posts,  I'll explain more about MVVM and how easy it is testing in that kind of architecture pattern. (with [Nimble](https://github.com/Quick/Nimble) and [Quick](https://github.com/Quick/Quick) or [Expecta](https://github.com/specta/expecta) and [Specta](https://github.com/specta/specta)).
 
 <br/>
 <h2>Summary</h2>
