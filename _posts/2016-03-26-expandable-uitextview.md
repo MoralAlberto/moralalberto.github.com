@@ -143,11 +143,3 @@ NSLayoutConstraint.activateConstraints([
 {% endhighlight %}
 
 As you can see, with NSLayoutAnchor you can add and activate multiple NSLayoutConstraints, with not as many parameters as with NSLayoutConstraint. It’s a quite awesome solution if you had many constraints to add in your view (This fluent API was introduced with iOS 9).
-
-<br/>
-The UIToolbar is added at the bottom, and inside it there’s a custom UITextView and UIButton. At first we add UILayoutGuide and inside it we add the UIToolbar.
-
-<br/>
-A user can customize the number of maximum lines. I’m gonna show and example in a bit.
-There’re three basic components: UIToolbar, UITextView and UIButton.
-The InputViewController is the base class, you can inherit from it, like you do with UIViewControllers.
