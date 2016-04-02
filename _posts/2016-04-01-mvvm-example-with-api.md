@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MVVM with API example"
-excerpt: "Create a delightful custom Expandable UITextView to use in our apps."
+excerpt: "An example about Model-View-ViewModel used with Reactive API."
 tags: [MVP, Viper, Binding, MVC, ViewModel, Business Logic, Functional Reactive Programming, API]
 image:
   feature: viewmodel.png
