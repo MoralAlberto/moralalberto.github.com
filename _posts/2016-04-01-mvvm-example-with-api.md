@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MVVM with API example"
-excerpt: "An example about Model-View-ViewModel used with Reactive API."
+excerpt: "An example about Model-View-ViewModel architecture pattern used with a Reactive API."
 tags: [MVP, Viper, Binding, MVC, ViewModel, Business Logic, Functional Reactive Programming, API]
 image:
   feature: viewmodel.png
