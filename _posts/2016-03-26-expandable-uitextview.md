@@ -10,7 +10,7 @@ image:
 > **Abstract**: NSLayoutAnchor, NSLayoutConstraint, UITextView, UIToolbar, Expandable TextView
 
 <figure>
-    <a href="https://raw.githubusercontent.com/MoralAlberto/ExpandableTextView/develop/demoImages/expandable.gif"><img src="https://raw.githubusercontent.com/MoralAlberto/ExpandableTextView/develop/demoImages/expandable.gif"></a>
+    <a href="https://raw.githubusercontent.com/MoralAlberto/ExpandableTextView/master/DemoImages/demo.gif"><img src="https://raw.githubusercontent.com/MoralAlberto/ExpandableTextView/master/DemoImages/demo.gif"></a>
 </figure>
 
 Recently, I created a repo on Github called [ExpandableTextView](https://github.com/MoralAlberto/ExpandableTextView). The main purpose of this repo is to add a UITextView within a UIToolbar and expand dynamically the height of this UIToolbar depending on the UITextView’s height. The UITextView’s content size may vary depends on the text introduced. To achieve that, **I used manual layout, with NSLayoutAnchor and NSLayoutConstraint**.
